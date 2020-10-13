@@ -1,6 +1,7 @@
 chrome.contextMenus.create({
     title: "Open New Tab",
     id: "parent",
+    contexts: ["all"],
     onclick: () => chrome.tabs.create({})
 });
 const openUrl = (url) => chrome.tabs.create({ url });
