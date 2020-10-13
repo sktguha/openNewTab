@@ -21,6 +21,7 @@ const URLS = [
 URLS.forEach(url => chrome.contextMenus.create({
     title: "Open " + url,
     parentId: "parent",
+    contexts: ["all"],
     onclick: openUrl.bind(this, url)
 }));
 
