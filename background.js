@@ -5,6 +5,7 @@ chrome.contextMenus.create({
 });
 const openUrl = (url) => chrome.tabs.create({ url });
 const URLS = [
+    "chrome://newtab",
     "https://www.facebook.com/",
     "https://www.linkedin.com/",
     "https://www.quora.com/",
